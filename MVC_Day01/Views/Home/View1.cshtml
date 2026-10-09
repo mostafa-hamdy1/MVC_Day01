@@ -1,0 +1,35 @@
+﻿<h1>Hello World</h1>
+
+<style>
+h1{
+	color:aqua
+}
+</style>
+<script>
+	consol.log("Hi")
+</script>
+
+<!-- C# inside HTMl-->
+<!-- block Code -->
+@{
+	int x = 10;
+	int y = x + 10;
+}
+<!-- Inline Statement-->
+<h1>@x</h1>
+@y
+<!-- conditional Statement -->
+@if(x > y)
+{
+	<h2> x=@x is greater than y=@y</h2>
+}
+else
+{
+	<h2> x=@x is Smaller than y=@y</h2>
+}
+<!-- Looping Statement -->
+@for(int i = 0;i<10;i++)
+{
+	<li>@i</li>
+}
+
